@@ -1,0 +1,260 @@
+body {
+    background-color: rgba(18, 18, 18, 0.93);
+    color: #e0e0e0;
+    font-family: Arial, sans-serif;
+}
+
+#WorkingPage {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#WorkingPage .header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+#WorkingPage .user-name {
+    margin-top: 15px;
+    color: #e0e0e0;
+    font-size: 14px;
+    font-style: italic;
+    text-align: right;
+}
+
+#WorkingPage .logout-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* 3D effect */
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#WorkingPage .logout-button:hover {
+    background-color: #c82333;
+    transform: translateY(-3px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); /* Stronger shadow on hover */
+}
+
+#WorkingPage h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#WorkingPage .video-upload {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Match the box-shadow for 3D effect */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#WorkingPage .video-upload:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+#WorkingPage .file-upload {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin-right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+#WorkingPage .file-upload input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#WorkingPage .file-upload:hover {
+    background-color: #0056b3;
+}
+
+#WorkingPage .file-name {
+    margin-left: 10px;
+    color: #e0e0e0;
+    font-size: 16px;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#WorkingPage .video-upload button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#WorkingPage .video-upload button:disabled {
+    background-color: #444 !important; /* Darker gray when disabled */
+    color: #888;
+    cursor: not-allowed;
+}
+
+#WorkingPage .video-upload button:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+#WorkingPage ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#WorkingPage li {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Enhanced 3D effect */
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+#WorkingPage li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7); /* Stronger shadow on hover */
+}
+
+#WorkingPage h3 {
+    margin-bottom: 5px;
+    color: #007bff;
+    font-size: 20px;
+}
+
+#WorkingPage p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #e0e0e0;
+}
+
+#WorkingPage p strong {
+    color: #ffffff;
+}
+
+#WorkingPage .video-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 60px;
+    margin-top: 15px;
+    width: 80%;
+}
+
+#WorkingPage .status-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 30%;
+}
+
+#WorkingPage .status-item p {
+    margin-bottom: 5px;
+}
+
+#WorkingPage .status-item button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#WorkingPage .status-item button:disabled {
+    background-color: #444 !important;
+    color: #888;
+    cursor: not-allowed;
+}
+
+#WorkingPage .status-item button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+#WorkingPage .download-original-button {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute; /* Positioning to the right-hand side */
+    right: 20px;
+    bottom: 20px;
+    transition: background-color 0.2s;
+}
+
+#WorkingPage .download-original-button:disabled {
+    background-color: #666 !important; /* Darker gray when disabled */
+    color: #bbb;
+    cursor: not-allowed;
+}
+
+#WorkingPage .download-original-button:hover:not(:disabled) {
+    background-color: #e0a800;
+}
+
+#WorkingPage .remove-button {
+    background-color: #dc3545;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s;
+}
+
+#WorkingPage .remove-button:disabled {
+    background-color: #444 !important;
+    color: #888;
+    cursor: not-allowed;
+}
+
+#WorkingPage .remove-button:hover:not(:disabled) {
+    background-color: #c82333;
+}
+
+#WorkingPage .error-message {
+    color: red;
+    margin-top: 10px;
+}

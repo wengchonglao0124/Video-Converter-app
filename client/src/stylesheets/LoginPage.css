@@ -1,0 +1,41 @@
+.login-page11 section button:focus {
+    box-shadow: 0 0 0 2px rgba(0, 142, 240, 0.26);
+}
+
+.login-page11 section button:hover {
+    background-color: #0070bd;
+}
+
+.login-page11 section button:active {
+    background-color: #00528a;
+}
+
+.login-page11, .login-page11 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    z-index: 9;
+    height: 100vh;
+    overflow: auto;
+}
+
+.signup-link {
+    color: rgb(84, 200, 183);
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    color: #54c879; /* Hover state */
+    text-decoration: underline;
+}
+
+.signup-link:active {
+    color: #54c879; /* Click state */
+}
+
+.error-message {
+    color: rgb(243, 33, 51);
+    font-weight: bold;
+}
