@@ -13,6 +13,8 @@ The Video Converter Application allows users to:
 
 Key features include user authentication (via AWS Cognito), asynchronous job handling (via SQS), and scalable video processing (using ECS).
 
+https://github.com/user-attachments/assets/d344a20a-324c-493b-9878-b8284f7c14d8
+
 ---
 
 ## Architecture
