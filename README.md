@@ -16,6 +16,9 @@ Key features include user authentication (via AWS Cognito), asynchronous job han
 ---
 
 ## Architecture
+
+![CleanShot 2025-02-09 at 22 35 46@2x](https://github.com/user-attachments/assets/24271ef7-099e-4e91-93d0-f8f2f0d5b158)
+
 The application consists of the following components:
 - **Frontend (Client)**: Built with React.js, provides a user-friendly interface for interacting with the application.
 - **Backend (Server)**: Includes the following services:
@@ -114,9 +117,3 @@ The application supports auto-scaling for high traffic scenarios:
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
----
-
-## Contributing
-We welcome contributions! Please fork the repository and create a pull request with your changes.
-
-For issues, contact us at [support@yourdomain.com](mailto:support@yourdomain.com).
